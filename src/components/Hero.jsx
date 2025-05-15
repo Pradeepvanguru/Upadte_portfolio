@@ -69,18 +69,20 @@ const Hero = () => {
             >
              <Button 
                 size="lg" 
-                className="bg-primary hover:bg-primary/90 text-white font-medium px-8"
+                className="bg-primary hover:bg-primary/90 text-white font-medium px-2"
                 onClick={() => document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' })}
+                 style={{fontSize: '9px'}}
               >
-                Get in Touch
+                Get in touch
               </Button>
-              <Button variant="outline" size="lg" asChild className="shadow-lg hover-lift">
+              <Button variant="outline" size="lg" asChild className="shadow-lg hover-lift"  style={{fontSize: '9px'}}>
                 <a href={resume} download>
-                  Download CV <Download className="ml-2 h-5 w-5" />
+                  Download Resume <Download className="ml-2 h-5 w-10" />
                 </a>
               </Button>
              
-              <Button 
+              <Button
+              style={{fontSize: '9px'}}
                 variant="outline" 
                 size="lg" 
                 className="border-gray-300 dark:border-gray-700"
@@ -116,9 +118,10 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative mx-auto lg:mx-0 max-w-md"
           >
-            <div className="relative w-full h-full aspect-square  overflow-hidden rounded-full bg-blue-100 dark:bg-blue-900/30 border-white shadow-xl left-12">
-              <img  alt="Professional portrait" className="w-full h-full object-cover " src={profile} />
-            </div>
+           <div className="relative w-full h-full aspect-square overflow-hidden rounded-full bg-blue-100 dark:bg-blue-900/30 border-white shadow-xl left-12 animate-glow-shadow">
+            <img alt="Professional portrait" className="w-full h-full object-cover" src={profile} />
+          </div>
+
             
             <div className="absolute -bottom-6 -right-6 bg-white dark:bg-gray-800 rounded-lg p-4 shadow-lg">
               <div className="text-sm font-medium">

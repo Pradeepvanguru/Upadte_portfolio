@@ -43,9 +43,10 @@ const About = () => {
             transition={{ duration: 0.6 }}
             className="relative"
           >
-            <div className="relative z-10 rounded-lg overflow-hidden shadow-xl">
-              <img  alt="About me image" className="w-full h-30" src={profile} />
+            <div className="relative z-10 w-50 h-100 rounded-lg overflow-hidden shadow-xl">
+              <img alt="About me image" className="w-full h-full object-cover" src={profile} />
             </div>
+
             
             {/* Decorative elements */}
             <div className="absolute -bottom-6 -left-6 w-64 h-64 bg-primary/10 rounded-full -z-10"></div>
