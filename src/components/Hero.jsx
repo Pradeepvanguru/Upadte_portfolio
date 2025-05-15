@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { ArrowDown, GitCommit as GitHub, Linkedin, Twitter, ArrowRight, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import resume from './assets/resume.pdf'
+import profile from './assets/pradeep pic.jpg'
 
 const Hero = () => {
   const scrollToAbout = () => {
@@ -116,7 +117,7 @@ const Hero = () => {
             className="relative mx-auto lg:mx-0 max-w-md"
           >
             <div className="relative w-full h-full aspect-square  overflow-hidden rounded-full bg-blue-100 dark:bg-blue-900/30 border-white shadow-xl left-12">
-              <img  alt="Professional portrait" className="w-full h-full object-cover " src="/src/components/assets/pradeep pic.jpg" />
+              <img  alt="Professional portrait" className="w-full h-full object-cover " src={profile} />
             </div>
             
             <div className="absolute -bottom-6 -right-6 bg-white dark:bg-gray-800 rounded-lg p-4 shadow-lg">

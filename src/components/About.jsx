@@ -2,6 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, MapPin, Briefcase, GraduationCap } from 'lucide-react';
+import profile from './assets/pic2.jpg';
 
 
 const About = () => {
@@ -43,7 +44,7 @@ const About = () => {
             className="relative"
           >
             <div className="relative z-10 rounded-lg overflow-hidden shadow-xl">
-              <img  alt="About me image" className="w-full h-30" src="/src/components/assets/pic2.jpg" />
+              <img  alt="About me image" className="w-full h-30" src={profile} />
             </div>
             
             {/* Decorative elements */}
@@ -112,7 +113,7 @@ const About = () => {
                 </div>
                 <div>
                   <h4 className="text-sm text-gray-500 dark:text-gray-400">Degree</h4>
-                  <p className="font-medium">BTech Computer Science</p>
+                  <p className="font-medium">BTech ,Information Technology</p>
                 </div>
               </div>
             </motion.div>
