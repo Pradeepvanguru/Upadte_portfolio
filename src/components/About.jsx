@@ -43,11 +43,10 @@ const About = () => {
             transition={{ duration: 0.6 }}
             className="relative"
           >
-            <div className="relative z-10 w-50 h-100 rounded-lg overflow-hidden shadow-xl">
-              <img alt="About me image" className="w-full h-full object-cover" src={profile} />
+            <div className="relative z-10 w-3/4 mx-auto h-[500px] rounded-lg overflow-hidden shadow-xl">
+              <img alt="About me image" className="w-full h-full object-cover object-center" src={profile} />
             </div>
 
-            
             {/* Decorative elements */}
             <div className="absolute -bottom-6 -left-6 w-64 h-64 bg-primary/10 rounded-full -z-10"></div>
             <div className="absolute -top-6 -right-6 w-40 h-40 bg-secondary/20 rounded-full -z-10"></div>
@@ -66,7 +65,7 @@ const About = () => {
                 I'm a passionate web developer with expertise in creating beautiful, functional, and user-centered digital experiences. With a background in both design and development, I bring a unique perspective to every project.
               </p>
               <p className="text-gray-600 dark:text-gray-400">
-                When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying outdoor activities to recharge my creative energy.
+                When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying outdoor activities to recharged my creative energy.
               </p>
             </motion.div>
 

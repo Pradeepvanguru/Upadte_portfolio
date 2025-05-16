@@ -26,18 +26,20 @@ const Header = ({ theme, toggleTheme }) => {
   ];
 
   const scrollToSection = (sectionId) => {
-    setMobileMenuOpen(false);
-    const element = document.querySelector(sectionId);
-    if (element) {
-      const headerOffset = 80;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-    }
+    setMobileMenuOpen(false); // Close mobile menu first
+    setTimeout(() => {
+      const element = document.querySelector(sectionId);
+      if (element) {
+        const headerOffset = 80;
+        const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+        const offsetPosition = elementPosition - headerOffset;
+    
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    }, 100); // Small delay to ensure menu closing animation completes
   };
 
   return (
@@ -69,6 +71,7 @@ const Header = ({ theme, toggleTheme }) => {
             className="hidden md:flex space-x-8"
           >
             {navLinks.map((link, index) => (
+              // Desktop Navigation Implementation
               <a
                 key={link.name}
                 href={link.href}
@@ -105,10 +108,11 @@ const Header = ({ theme, toggleTheme }) => {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden bg-white dark:bg-gray-900 shadow-lg"
+            className="md:hidden fixed top-16 left-0 right-0 w-full bg-white dark:bg-gray-900 shadow-lg z-50"
           >
             <div className="px-4 pt-2 pb-4 space-y-1">
-              {navLinks.map((link) => (
+              {navLinks.map((link,index) => (
+                // Mobile Navigation Implementation
                 <a
                   key={link.name}
                   href={link.href}
