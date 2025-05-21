@@ -82,13 +82,13 @@ const Hero = () => {
                   asChild
                 >
                   <a 
-                    href='https://1drv.ms/b/c/ba03935eace1415a/EZCZxTcFbptLiHWtRy6CQgEBUiPUGjWO6xzFWJIA4dxn4w?e=kogQgn'  
+                    href='https://drive.google.com/file/d/1qNu0GWOvXQHEuFg-M2K2V7j9mqQxXDqG/view?usp=drive_link'  
                     target="_blank"
                     rel="noopener noreferrer" 
                     download
                     className="flex items-center"
                   >
-                    Download CV <Download className="ml-2 h-4 w-4" />
+                    Resume <Download className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
               </div>
