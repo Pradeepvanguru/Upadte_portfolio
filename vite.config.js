@@ -1,5 +1,6 @@
 import path from 'node:path';
 import react from '@vitejs/plugin-react';
+import { loadEnv } from 'vite';
 import { createLogger, defineConfig } from 'vite';
 
 const configHorizonsViteErrorHandler = `
@@ -186,7 +187,7 @@ export default defineConfig({
 	plugins: [react(), addTransformIndexHtml],
 	server: {
 		cors: true,
-		 port: process.env.PORT || 4000, // ← use Render's assigned port
+		 port: Number(env.VITE_PORT) ||  4000, // ← use Render's assigned port
                  host: '0.0.0.0' ,// ← allow external connections
 		headers: {
 			'Cross-Origin-Embedder-Policy': 'credentialless',
