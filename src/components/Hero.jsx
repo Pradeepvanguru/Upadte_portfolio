@@ -82,11 +82,11 @@ const Hero = () => {
                   asChild
                 >
                   <a 
-                    href='https://1drv.ms/b/c/ba03935eace1415a/EYPOzUDJIjdEkM5xJIDR80sB124t0DXnwCOQ7j8OXzjQsA?e=M76r11'  
+                    href='https://1drv.ms/b/c/ba03935eace1415a/EZCZxTcFbptLiHWtRy6CQgEBUiPUGjWO6xzFWJIA4dxn4w?e=kogQgn'  
                     target="_blank"
                     rel="noopener noreferrer" 
                     download
-                    className="flex items-center cursor-pointer"
+                    className="flex items-center"
                   >
                     Download CV <Download className="ml-2 h-4 w-4" />
                   </a>
