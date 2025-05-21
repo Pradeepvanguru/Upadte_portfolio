@@ -1,3 +1,4 @@
+import { SiProcessingfoundation } from "react-icons/si"; 
 
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -58,8 +59,8 @@ const Header = ({ theme, toggleTheme }) => {
             transition={{ duration: 0.5 }}
             className="flex-shrink-0"
           >
-            <a href="#home" className="text-xl md:text-2xl font-bold text-gradient">
-              Portfolio
+            <a href="#home" className="text-xl md:text-2xl font-bold text-gradient flex items-center gap-2">
+            <SiProcessingfoundation className="inline-block" fontSize={30} />ortfolio 
             </a>
           </motion.div>
           

@@ -37,12 +37,12 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: 'AUTOMATED SMART JOB APPLICATION SYSTEM',
+      title: 'NEXTGEN JOB PORTAL – BRIDGING JOB SEEKERS AND RECRUITERS',
       description: 'An automated system that personalizes and sends job applications with resumes to HR contacts, streamlining the job search process for seekers. It is user-friendly and highly efficient, ensuring a seamless and professional application experience.',
       image: main3,
-      category: 'GitHub Projects',
+      category: 'Live Projects',
       technologies: ['React', 'Tailwind CSS','Node.js', 'MongoDB', 'Express Js','GitHub','Vercil','Render'],
-      demoLink: '#',
+      demoLink: 'https://smart-click-oxrx.vercel.app/',
       codeLink: 'https://github.com/Pradeepvanguru/Smart_job_portal.git',
     },
     {

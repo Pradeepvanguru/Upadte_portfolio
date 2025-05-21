@@ -43,7 +43,7 @@ const About = () => {
             transition={{ duration: 0.6 }}
             className="relative"
           >
-            <div className="relative z-10 w-3/4 mx-auto h-[500px] rounded-lg overflow-hidden shadow-xl">
+            <div className="relative z-10 w-3/4 mx-auto h-[550px] rounded-lg overflow-hidden shadow-xl">
               <img alt="About me image" className="w-full h-full object-cover object-center" src={profile} />
             </div>
 

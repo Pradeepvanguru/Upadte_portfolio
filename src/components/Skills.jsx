@@ -40,7 +40,7 @@ const Skills = () => {
     },
     {
       id: 'other',
-      title: 'Other Skills',
+      title: 'Version controls and Deployment',
       icon: <Globe className="w-6 h-6 text-indigo-600 dark:text-indigo-400" />,
       skills: ['Git', 'GitHub', 'CI/CD', 'Jenkins', 'AWS EC2', 'Netlify', 'Vercel', 'Testing', 'SEO', 'Performance Optimization','Render',"AWS S3"]
     }
