@@ -186,6 +186,8 @@ export default defineConfig({
 	plugins: [react(), addTransformIndexHtml],
 	server: {
 		cors: true,
+		 port: process.env.PORT || 4000, // ← use Render's assigned port
+                 host: '0.0.0.0' ,// ← allow external connections
 		headers: {
 			'Cross-Origin-Embedder-Policy': 'credentialless',
 		},
