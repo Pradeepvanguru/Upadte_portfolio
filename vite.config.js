@@ -1,6 +1,8 @@
 import path from 'node:path';
 import react from '@vitejs/plugin-react';
 import { createLogger, defineConfig } from 'vite';
+import dotenv from 'dotenv';
+dotenv.config();
 
 const configHorizonsViteErrorHandler = `
 const observer = new MutationObserver((mutations) => {
@@ -186,6 +188,8 @@ export default defineConfig({
 	plugins: [react(), addTransformIndexHtml],
 	server: {
 		cors: true,
+		host: '0.0.0.0',
+                port: Number(process.env.VITE_PORT) || 3000,
 		headers: {
 			'Cross-Origin-Embedder-Policy': 'credentialless',
 		},
