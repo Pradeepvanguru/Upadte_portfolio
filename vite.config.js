@@ -183,6 +183,7 @@ logger.error = (msg, options) => {
 }
 
 export default defineConfig({
+const env = loadEnv(mode, process.cwd());
 	customLogger: logger,
 	plugins: [react(), addTransformIndexHtml],
 	server: {
