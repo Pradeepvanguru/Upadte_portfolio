@@ -189,7 +189,7 @@ export default defineConfig({
 	server: {
 		cors: true,
 		host: '0.0.0.0',
-                port: Number(process.env.VITE_PORT) || 3000,
+        port: Number(process.env.PORT) || 3000,
 		headers: {
 			'Cross-Origin-Embedder-Policy': 'credentialless',
 		},
